@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Jash Mitesh Dalal</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">Jash Mitesh Dalal</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects & More</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery-main">
+    <h1>Fun stuff!</h1>
+    <p class="gallery-intro">This is the travel-blogger version of me coming to life.</p>
+
+    <section class="gallery-list">
+      <article class="gallery-item">
+        <a href="resources/brooklyn.jpg" class="gallery-link js-lightbox" data-caption="Brooklyn Bridge — New York">
+          <img src="resources/brooklyn.jpg" alt="Brooklyn Bridge" width="3024" height="4032">
+        </a>
+        <div class="gallery-copy">
+          <h2>Brooklyn Bridge</h2>
+          <p class="gallery-meta">New York City · easy 10k steps</p>
+          <p>NYC continues to remind me of my hometown (Bombay). Even though it features in so many movies, the Brooklyn bridge is a must visit. I was unhinged enough to go during peak winter and lived to tell the tale (and battle the wind). Save yourself the survival test and show up early on a sunny morning to beat the crowd.</p>
+        </div>
+      </article>
+
+      <article class="gallery-item">
+        <a href="resources/beach.jpeg" class="gallery-link js-lightbox" data-caption="Santa Monica Beach">
+          <img src="resources/beach.jpeg" alt="Santa Monica beach" width="4032" height="3024">
+        </a>
+        <div class="gallery-copy">
+          <h2>Santa Monica</h2>
+          <p class="gallery-meta">California · you beauty.</p>
+          <p>Definitely a 10/10. My favorite part was the drive to Malibu beach and the ferris wheel (of course!)</p>
+        </div>
+      </article>
+
+      <article class="gallery-item">
+        <a href="resources/snow.jpeg" class="gallery-link js-lightbox" data-caption="Snow — I really like snow.">
+          <img src="resources/snow.jpeg" alt="Snow" width="4284" height="5712">
+        </a>
+        <div class="gallery-copy">
+          <h2>Snow</h2>
+          <p class="gallery-meta">Somewhere in Sequoia NP · you gotta get snow tires</p>
+          <p>Hmm, Sequoia is serene in the winter, but navigating icy roads on a rainy day can be a pain. 8/10 experience, but if I had a time machine, I would swap the it for a pair of skis at Lake Tahoe.</p>
+        </div>
+      </article>
+
+      <article class="gallery-item">
+        <a href="resources/umass-graduation.jpeg" class="gallery-link js-lightbox" data-caption="UMass Amherst graduation">
+          <img src="resources/umass-graduation.jpeg" alt="UMass Amherst graduation" width="4032" height="3024">
+        </a>
+        <div class="gallery-copy">
+          <h2>UMass Amherst</h2>
+          <p class="gallery-meta">Graduation · MS in Computer Science</p>
+          <p>Not a travel memory - but a shoutout to Amherst! It is extremely gorgeous in the Fall and also full of grad students who liked Algorithms and NLP/Reinforcement Learning a little too much. This was the day when I officially was allowed to put a "Master's" on LinkedIn. Would recommend visiting. The cap and gown are in a closet somewhere now.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img">
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Jash Mitesh Dalal. All rights reserved.</p>
+  </footer>
+  <script src="lightbox.js"></script>
+</body>
+</html>
